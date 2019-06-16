@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VidKeepr</title>
+
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="titlebar">
+        <div class="app-title">
+            <span>VidKeepr</span>
+            <span class="app-version">(v0.1.0)</span>
+        </div>
+
+        <div class="main-menu">
+            <span class="menu-item">
+                <i class="fa fa-times fa-fw"></i>
+                Quick Hide (F1)
+            </span>
+            <span class="menu-item">
+                <i class="fa fa-download fa-fw"></i>
+                Import 
+            </span>
+            <span class="menu-item">
+                <i class="fa fa-gear fa-fw"></i>
+                Settings
+            </span>
+            <span class="menu-item">
+                <i class="fa fa-support fa-fw"></i>
+                Donate Developer
+            </span>
+            <span class="menu-item">
+                <i class="fa fa-info fa-fw"></i>
+                Help
+            </span>
+        </div>
+
+        <div class="control-box">  
+            <div class="control-button" id="control-minimize">
+                <i class="fa fa-window-minimize" style="font-size:0.8em"></i>
+            </div>
+            <div class="control-button" id="control-maximize">
+                <i class="fa fa-window-maximize" style="font-size:0.8em"></i>
+            </div>
+            <div class="control-button" id="control-exit">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-selection">
+        <div class="tab-collection">
+            <div class="tab-item">
+                <i class="icon fa fa-photo fa-fw"></i>
+                <span class="label">Photos</span>
+            </div>
+            <div class="tab-item selected">
+                <i class="icon fa fa-play fa-fw"></i>
+                <span class="label">Videos</span>
+            </div>
+
+            <div class="tab-item">
+                <i class="icon fa fa fa-star fa-fw"></i>
+                <span class="label">Stars</span>
+            </div>
+
+            <div class="tab-item">
+                <i class="icon fa fa-building fa-fw"></i>
+                <span class="label">Brands</span>
+            </div>
+
+            <div class="tab-item">
+                <i class="icon fa fa-list fa-fw"></i>
+                <span class="label">Categories</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <input type="text" placeholder="Search for a video, star, or brand..." class="search-bar">
+        <div class="search-icon">
+            <i class="fa fa-search"></i>
+        </div>
+
+        <div class="left-toolbar">
+            <span>Display</span>
+            <div class="display-size switch">
+                <div class="selection selection selected" title="Dispaly as a List">
+                    <i class="fa fa-fw fa-list"></i>
+                </div>
+                <div class="selection selection" title="Display Thumbnails">
+                    <i class="fa fa-fw fa-square"></i>
+                </div>
+            </div>
+
+            <span>Sort</span>
+            <div class="sort switch">
+                <div class="selection selection selected" title="Sort by Filename">
+                    <i class="fa fa-fw fa-sort-alpha-asc"></i>
+                </div>
+                <div class="selection selection">
+                    <i class="fa fa-fw fa-calendar-times-o" title="Sort by Created Date"></i>
+                </div>
+                <div class="selection selection">
+                    <i class="fa fa-fw fa-star-o" title="Sort by Number of Stars"></i>
+                </div>
+            </div>
+            
+            <span>Order</span>
+            <div class="sort switch">
+                <div class="selection selection selected" title="Ascending">
+                    <i class="fa fa-fw fa-sort-alpha-asc"></i>
+                </div>
+                <div class="selection selection">
+                    <i class="fa fa-fw fa-sort-alpha-desc" title="Descending"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scrollable-container">
+            <div class="video-item">
+                <img src="placeholders/1.jpg" alt="" class="thumbnail">
+
+                <div class="video-details">
+                    <span class="video-title">Video title is great</span>
+                    <span class="video-contributors">Samuel L. Jackson</span>
+
+                    <div class="stars-and-publisher">
+                        <span class="stars">
+                            <i class="fa fa-star"></i>
+                            <span>4.8/5</span>
+                        </span> 
+
+                        <span class="publisher">
+                            Brazzers
+                        </span>
+                    </div>
+                </div>
+
+                <div class="play-button">
+                    <i class="fa fa-play"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="login-panel" class="login show">
+        <div class="panel">
+            <div class="center">
+                <p>Enter Password</p>
+                <input id="password_input" type="password" placeholder="" class="password-input">
+
+                <div style="text-align:center;margin-top:25px">
+                    <button id="password-proceed-button" class="button proceed-button">Proceed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

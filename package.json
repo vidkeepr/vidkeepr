@@ -1,0 +1,17 @@
+{
+  "name": "vidkeepr",
+  "version": "1.0.0",
+  "description": "A \"video\" manager app for everybody",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Chamuth Chamandana",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.3"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0"
+  }
+}
