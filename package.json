@@ -9,7 +9,7 @@
   "author": "Chamuth Chamandana",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^11.5.0"
+    "electron": "^15.5.5"
   },
   "dependencies": {
     "electron-reload": "^1.4.0"
